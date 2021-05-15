@@ -1,10 +1,6 @@
 name: Test
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -16,12 +12,12 @@ jobs:
           neovim: true
           version: 'nightly'
 
-      - name: Install Plenary
+      - name: Install dependencies
         run: |
           mkdir -p ~/.local/share/nvim/site/pack/vendor/start
           git clone --depth 1 https://github.com/nvim-lua/plenary.nvim ~/.local/share/nvim/site/pack/vendor/start/plenary.nvim
           
-      - name: Link searcher.nvim source
+      - name: Link source
         run: ln -s $(pwd) ~/.local/share/nvim/site/pack/vendor/start
       
       - name: Run tests
