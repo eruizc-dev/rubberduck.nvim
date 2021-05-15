@@ -16,19 +16,13 @@ jobs:
           neovim: true
           version: 'nightly'
 
-      - name: Install vim-plug
+      - name: Install Plenary
         run: |
-          curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-          nvim --headless -u ~/.local/share/nvim/site/autoload/plug.vim -c "PlugUpgrade"
-          
-      - name: Install plenary.nvim
-        run: |
-          echo "call plug#begin(expand("~/.local/share/nvim/site/plugged"))\nPlug 'nvim-lua/popup.nvim'\ncall plug#end()" >> ~/.local/share/nvim/site/init.vim
-          nvim --headless -u ~/.local/share/nvim/site/autoload/plug.vim -c "PlugInstall plenary.nvim"
+          mkdir -p ~/.local/share/nvim/site/pack/vendor/start
+          git clone --depth 1 https://github.com/nvim-lua/plenary.nvim ~/.local/share/nvim/site/pack/vendor/start/plenary.nvim
           
       - name: Link searcher.nvim source
-        run: |
-          ln -s . ~/.local/share/nvim/site/plugged/searcher.nvim
+        run: ln -s $(pwd) ~/.local/share/nvim/site/pack/vendor/start
       
       - name: Run tests
         run: make test
