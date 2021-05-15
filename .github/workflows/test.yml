@@ -9,28 +9,27 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      XDG_CONFIG_HOME: ~/.config
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - uses: rhysd/action-setup-vim@v1.2.6
         with:
           neovim: true
           version: 'nightly'
 
-      # Runs a single command using the runners shell
       - name: Install vim-plug
         run: |
-          curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-          nvim --headless -c "PlugUpgrade"
+          curl -fLo $XDG_CONFIG_HOME/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
           
       - name: Install plenary.nvim
         run: |
-          echo "call plug#begin("~/.config/nvim/plugged")\nPlug 'nvim-lua/popup.nvim'\ncall plug#end()" >> ~/.config/nvim/init.vim
-          nvim --headless -c "PlugInstall"
+          echo "call plug#begin(expand("$XDG_CONFIG_HOME/nvim/plugged"))\nPlug 'nvim-lua/popup.nvim'\ncall plug#end()" >> ~/$XDG_CONFIG_HOME/nvim/init.vim
+          nvim --headless -c "PlugInstall plenary.nvim"
           
       - name: Link searcher.nvim source
         run: |
-          ln -s . ~/.config/nvim/plugged/searcher.nvim
+          ln -s . $XDG_CONFIG_HOME/nvim/plugged/searcher.nvim
       
       - name: Run tests
         run: make test
