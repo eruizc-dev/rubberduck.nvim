@@ -22,10 +22,13 @@ jobs:
         run: |
           mkdir -p $HOME/.local/share/nvim/site/pack
           git clone --depth 1 https://github.com/nvim-lua/plenary.nvim.git $HOME/.local/share/nvim/site/pack
-          
-      - name: Link searcher.nvim source
-        run: |
-          ln -s . $HOME/.local/share/nvim/site/pack/searcher.nvim
       
-      - name: Run tests
-        run: make test
+      - name: Ls
+        run: ls -la
+        
+      - name: Where vim
+        run: where nvim
+        
+      - name: ls where
+        run: ls -la `where nvim`
+        
