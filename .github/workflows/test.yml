@@ -24,7 +24,7 @@ jobs:
           
       - name: Install plenary.nvim
         run: |
-          echo "call plug#begin(expand("$XDG_CONFIG_HOME/nvim/plugged"))\nPlug 'nvim-lua/popup.nvim'\ncall plug#end()" >> ~/$XDG_CONFIG_HOME/nvim/init.vim
+          echo "call plug#begin(expand("$XDG_CONFIG_HOME/nvim/plugged"))\nPlug 'nvim-lua/popup.nvim'\ncall plug#end()" >> $XDG_CONFIG_HOME/nvim/init.vim
           nvim --headless -c "PlugInstall plenary.nvim"
           
       - name: Link searcher.nvim source
