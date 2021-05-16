@@ -9,7 +9,7 @@ local function new_http_request(status_code, body)
 end
 
 function plenary_curl.get(url, params)
-  local result = curl.get({ url, params })
+  local result = curl.get({ url = url, params = params })
   if result == nil then
     return new_http_request(500, "Failed to fetch")
   end

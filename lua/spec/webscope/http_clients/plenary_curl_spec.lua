@@ -5,23 +5,26 @@ local client = require("webscope.http_client.plenary_curl")
 describe("plenary_curl", function()
   local curl = mock(require("plenary.curl"), true)
 
+  before_each(function()
+    mock.clear(curl)
+  end)
+
   describe("get", function()
 
     it("invokes curl with correct url and params", function()
       local url = "https://api.somewebsite.com"
       local params = { q = "how to exit vim", sort = "asc"}
-      curl.get.returns(nil)
       client.get(url, params)
-      assert.stub(curl.get).was_called_with({ url, params })
+      assert.stub(curl.get).was_called_with({ url = url, params = params })
     end)
 
-    it("returns 500 if receives null", function()
+    it("returns 500 if receives nil", function()
       curl.get.returns(nil)
       local result = client.get("https://api.somewebsite.com")
       assert.equal(500, result.status_code)
     end)
 
-    it("returns errmsg if receives null", function()
+    it("returns errmsg if receives nil", function()
       curl.get.returns(nil)
       local result = client.get("https://api.somewebsite.com")
       assert.equal("Failed to fetch", result.body)
