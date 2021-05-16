@@ -1,6 +1,6 @@
 local mock = require("luassert.mock")
 
-local client = require("webscope.http_client.plenary_curl")
+local client = require("webscope.http_clients.plenary_curl")
 
 describe("plenary_curl", function()
   local curl = mock(require("plenary.curl"), true)
@@ -44,6 +44,38 @@ describe("plenary_curl", function()
       local result = client.get("http://ajfkdslajfs.com")
       assert.equal(body, result.body)
     end)
+
+    it("returns headers parsed", function()
+      local raw_headers = {
+        "content-type: application/json; charset=utf-8",
+        "content-encoding: gzip"
+      }
+      local parsed_headers = {
+        ["content-type"] = "application/json; charset=utf-8",
+        ["content-encoding"] = "gzip"
+      }
+      curl.get.returns({ headers = raw_headers })
+      local result = client.get("https://api.somewebsite.com")
+      assert.equal(vim.inspect(parsed_headers), vim.inspect(result.headers))
+    end)
+
+    --it("returns body parsed as json if conten-type is json", function()
+    --  local raw_json =  [[{
+    --    'users': ['jhon', 'johana'],
+    --    'count': 2,
+    --    'filters': { 'startingLetter': 'j', 'age': 25 }
+    --  }]]
+    --  local parsed_json = {
+    --    users = { "jhon", "johana" },
+    --    count = 2,
+    --    filters = { startingLetter = "j", age = 25 }
+    --  }
+    --  local headers = { "content-type: application/json" }
+
+    --  curl.get.returns({ body = raw_json, headers = headers })
+    --  local result = client.get("https://api.somewebsite.com")
+    --  assert.equal(vim.inspect(parsed_json), vim.inspect(result.body))
+    --end)
 
   end)
 
