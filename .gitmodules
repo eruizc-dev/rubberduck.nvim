@@ -1,0 +1,4 @@
+[submodule "lua/json_lua"]
+	path = lua/json_lua
+	url = https://github.com/rxi/json.lua.git
+	branch = master
