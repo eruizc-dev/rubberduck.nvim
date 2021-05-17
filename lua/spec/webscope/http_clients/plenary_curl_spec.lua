@@ -1,4 +1,5 @@
 local mock = require("luassert.mock")
+local random = require("webscope.utils.random")
 
 local client = require("webscope.http_clients.plenary_curl")
 
@@ -38,11 +39,19 @@ describe("plenary_curl", function()
       end
     end)
 
-    it("doesn't change return body", function()
-      local body = "<html></html>"
-      curl.get.returns({ status = 200, body = body })
-      local result = client.get("http://ajfkdslajfs.com")
-      assert.equal(body, result.body)
+    it("doesn't change return body if content-type is not specified", function()
+      for _=1, 256 do
+        local body = random.string(64)
+        curl.get.returns({ status = 200, body = body })
+        local result = client.get("http://ajfkdslajfs.com")
+        assert.equal(body, result.body)
+      end
+    end)
+
+    it("returns empty table if headers nil", function()
+      curl.get.returns({ headers = nil })
+      local result = client.get("https://api.somewebsite.com")
+      assert.equal(vim.inspect({}), vim.inspect(result.headers))
     end)
 
     it("returns headers parsed", function()
@@ -59,23 +68,23 @@ describe("plenary_curl", function()
       assert.equal(vim.inspect(parsed_headers), vim.inspect(result.headers))
     end)
 
-    --it("returns body parsed as json if conten-type is json", function()
-    --  local raw_json =  [[{
-    --    'users': ['jhon', 'johana'],
-    --    'count': 2,
-    --    'filters': { 'startingLetter': 'j', 'age': 25 }
-    --  }]]
-    --  local parsed_json = {
-    --    users = { "jhon", "johana" },
-    --    count = 2,
-    --    filters = { startingLetter = "j", age = 25 }
-    --  }
-    --  local headers = { "content-type: application/json" }
+    it("returns body parsed as json if conten-type is json", function()
+      local headers = { "content-type: application/json" }
+      local raw_json =  [[{
+        "users": ["jhon", "johana"],
+        "count": 2,
+        "filters": { "startingLetter": "j", "age": 25 }
+      }]]
+      local parsed_json = {
+        users = { "jhon", "johana" },
+        count = 2,
+        filters = { startingLetter = "j", age = 25 }
+      }
 
-    --  curl.get.returns({ body = raw_json, headers = headers })
-    --  local result = client.get("https://api.somewebsite.com")
-    --  assert.equal(vim.inspect(parsed_json), vim.inspect(result.body))
-    --end)
+      curl.get.returns({ body = raw_json, headers = headers })
+      local result = client.get("https://api.somewebsite.com")
+      assert.equal(vim.inspect(parsed_json), vim.inspect(result.body))
+    end)
 
   end)
 

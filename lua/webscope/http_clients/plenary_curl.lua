@@ -1,10 +1,11 @@
+local json_parser = require("webscope.json_parser")
 local curl = require("plenary.curl")
 local plenary_curl = {}
 
 local function parse_headers(headers)
-  local parsed_headers = {}
-  if headers == nil then return parsed_headers end
+  if headers == nil then return {} end
 
+  local parsed_headers = {}
   for _, header in ipairs(headers) do
     local separator_start, separator_end = header:find(": ")
     local key = header:sub(1, separator_start - 1)
@@ -15,11 +16,24 @@ local function parse_headers(headers)
   return parsed_headers
 end
 
+local function parse_body(body, type)
+  if type == "application/json" then
+    local success, result = pcall(json_parser.deserialize, body)
+    if success then return result else
+      print(result)
+    end
+  end
+  return body
+end
+
 local function new_http_request(response)
+  if response == nil then return {} end
+  local headers = parse_headers(response.headers)
+  local body = parse_body(response.body, headers["content-type"])
   return {
-    body = response.body,
+    body = body,
     status_code = response.status,
-    headers = parse_headers(response.headers)
+    headers = headers
   }
 end
 
