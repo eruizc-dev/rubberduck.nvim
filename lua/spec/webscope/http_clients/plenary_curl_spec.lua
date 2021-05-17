@@ -59,23 +59,23 @@ describe("plenary_curl", function()
       assert.equal(vim.inspect(parsed_headers), vim.inspect(result.headers))
     end)
 
-    --it("returns body parsed as json if conten-type is json", function()
-    --  local raw_json =  [[{
-    --    'users': ['jhon', 'johana'],
-    --    'count': 2,
-    --    'filters': { 'startingLetter': 'j', 'age': 25 }
-    --  }]]
-    --  local parsed_json = {
-    --    users = { "jhon", "johana" },
-    --    count = 2,
-    --    filters = { startingLetter = "j", age = 25 }
-    --  }
-    --  local headers = { "content-type: application/json" }
+    it("returns body parsed as json if conten-type is json", function()
+      local raw_json =  [[{
+        'users': ['jhon', 'johana'],
+        'count': 2,
+        'filters': { 'startingLetter': 'j', 'age': 25 }
+      }]]
+      local parsed_json = {
+        users = { "jhon", "johana" },
+        count = 2,
+        filters = { startingLetter = "j", age = 25 }
+      }
+      local headers = { "content-type: application/json" }
 
-    --  curl.get.returns({ body = raw_json, headers = headers })
-    --  local result = client.get("https://api.somewebsite.com")
-    --  assert.equal(vim.inspect(parsed_json), vim.inspect(result.body))
-    --end)
+      curl.get.returns({ body = raw_json, headers = headers })
+      local result = client.get("https://api.somewebsite.com")
+      assert.equal(vim.inspect(parsed_json), vim.inspect(result.body))
+    end)
 
   end)
 
