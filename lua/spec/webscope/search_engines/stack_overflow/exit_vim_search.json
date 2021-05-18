@@ -1,0 +1,792 @@
+{
+  "items": [
+    {
+      "tags": [
+        "vim",
+        "vi"
+      ],
+      "owner": {
+        "reputation": 40444,
+        "user_id": 1268117,
+        "user_type": "registered",
+        "accept_rate": 50,
+        "profile_image": "https://www.gravatar.com/avatar/f67aeacce4be3f1502d887c0aa67ce5f?s=128&d=identicon&r=PG",
+        "display_name": "jclancy",
+        "link": "https://stackoverflow.com/users/1268117/jclancy"
+      },
+      "is_answered": true,
+      "view_count": 2345631,
+      "protected_date": 1495751130,
+      "accepted_answer_id": 11828573,
+      "answer_count": 10,
+      "score": 4252,
+      "last_activity_date": 1615699795,
+      "creation_date": 1344255947,
+      "last_edit_date": 1557874179,
+      "question_id": 11828270,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor",
+      "title": "How do I exit the Vim editor?"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 30871,
+        "user_id": 149578,
+        "user_type": "registered",
+        "accept_rate": 66,
+        "profile_image": "https://www.gravatar.com/avatar/fa9e76df47b52695e4c8f4ab31ee57cb?s=128&d=identicon&r=PG",
+        "display_name": "Ricky",
+        "link": "https://stackoverflow.com/users/149578/ricky"
+      },
+      "is_answered": true,
+      "view_count": 154406,
+      "accepted_answer_id": 1879245,
+      "answer_count": 10,
+      "score": 325,
+      "last_activity_date": 1568300991,
+      "creation_date": 1260430127,
+      "last_edit_date": 1568300064,
+      "question_id": 1879219,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/1879219/how-to-temporarily-exit-vim-and-go-back",
+      "title": "How to temporarily exit Vim and go back"
+    },
+    {
+      "tags": [
+        "git",
+        "vim",
+        "git-commit"
+      ],
+      "owner": {
+        "reputation": 583,
+        "user_id": 1570307,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/dbf45b333314f966441ed91cc394f112?s=128&d=identicon&r=PG",
+        "display_name": "j0fb",
+        "link": "https://stackoverflow.com/users/1570307/j0fb"
+      },
+      "is_answered": true,
+      "view_count": 14836,
+      "accepted_answer_id": 16596912,
+      "answer_count": 4,
+      "score": 48,
+      "last_activity_date": 1575892167,
+      "creation_date": 1368732713,
+      "last_edit_date": 1503078906,
+      "question_id": 16595908,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/16595908/exit-vim-without-committing-changes-in-git",
+      "title": "Exit Vim without committing changes in Git"
+    },
+    {
+      "tags": [
+        "vim",
+        "clipboard"
+      ],
+      "owner": {
+        "reputation": 733,
+        "user_id": 799322,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/8983d49f085ddcfdcdd509a699bb3fb4?s=128&d=identicon&r=PG",
+        "display_name": "Thanos",
+        "link": "https://stackoverflow.com/users/799322/thanos"
+      },
+      "is_answered": true,
+      "view_count": 5097,
+      "accepted_answer_id": 9381778,
+      "answer_count": 7,
+      "score": 50,
+      "last_activity_date": 1605136053,
+      "creation_date": 1308830183,
+      "last_edit_date": 1528042054,
+      "question_id": 6453595,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/6453595/prevent-vim-from-clearing-the-clipboard-on-exit",
+      "title": "Prevent Vim from clearing the clipboard on exit"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 5495795,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/33ff22eaffe37079ebbe96fc58f3544d?s=128&d=identicon&r=PG&f=1",
+        "display_name": "enjoynet",
+        "link": "https://stackoverflow.com/users/5495795/enjoynet"
+      },
+      "is_answered": false,
+      "view_count": 418,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1547584155,
+      "creation_date": 1445988393,
+      "last_edit_date": 1547584155,
+      "question_id": 33380289,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/33380289/exit-vim-without-clearing-the-terminal-before",
+      "title": "Exit Vim without clearing the terminal before"
+    },
+    {
+      "tags": [
+        "macos",
+        "vim",
+        "editor",
+        "vi"
+      ],
+      "owner": {
+        "reputation": 25,
+        "user_id": 12924188,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/053b0fc2f8062d3a5b80021d8ac03c7c?s=128&d=identicon&r=PG&f=1",
+        "display_name": "vvm32812",
+        "link": "https://stackoverflow.com/users/12924188/vvm32812"
+      },
+      "is_answered": true,
+      "view_count": 62,
+      "accepted_answer_id": 60348015,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582332652,
+      "creation_date": 1582331755,
+      "question_id": 60347939,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/60347939/exit-column-mode-for-vim",
+      "title": "Exit column mode for vim"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 39,
+        "user_id": 2928811,
+        "user_type": "registered",
+        "profile_image": "https://graph.facebook.com/680032970/picture?type=large",
+        "display_name": "Alexis Lynne Handler",
+        "link": "https://stackoverflow.com/users/2928811/alexis-lynne-handler"
+      },
+      "is_answered": true,
+      "view_count": 6460,
+      "closed_date": 1411064074,
+      "answer_count": 2,
+      "score": 2,
+      "last_activity_date": 1537805340,
+      "creation_date": 1411063446,
+      "last_edit_date": 1537805340,
+      "question_id": 25919461,
+      "link": "https://stackoverflow.com/questions/25919461/i-cannot-exit-vim-i-hit-escape-and-tried-q-x-qx",
+      "closed_reason": "Duplicate",
+      "title": "I cannot exit Vim, I hit escape and tried :q :x :qx"
+    },
+    {
+      "tags": [
+        "vim",
+        "tags",
+        "stack"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 2936312,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/ff0bb2d32ea8c13c9a9841d15c3e56c0?s=128&d=identicon&r=PG&f=1",
+        "display_name": "user2936312",
+        "link": "https://stackoverflow.com/users/2936312/user2936312"
+      },
+      "is_answered": false,
+      "view_count": 122,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1383162637,
+      "creation_date": 1383143096,
+      "question_id": 19684974,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/19684974/i-want-to-save-vim-tag-stack-which-caches-project-code-tags-when-i-exit-vim",
+      "title": "I want to save vim tag stack which caches project code tags when i exit vim"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 105,
+        "user_id": 5148671,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/X35I3.jpg?s=128&g=1",
+        "display_name": "jcxl",
+        "link": "https://stackoverflow.com/users/5148671/jcxl"
+      },
+      "is_answered": true,
+      "view_count": 6985,
+      "accepted_answer_id": 31619016,
+      "answer_count": 6,
+      "score": 4,
+      "last_activity_date": 1613585031,
+      "creation_date": 1437676310,
+      "last_edit_date": 1437768287,
+      "question_id": 31595411,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/31595411/how-to-clear-the-screen-after-exit-vim",
+      "title": "how to clear the screen after exit vim"
+    },
+    {
+      "tags": [
+        "bash",
+        "vim"
+      ],
+      "owner": {
+        "reputation": 1606,
+        "user_id": 1461154,
+        "user_type": "registered",
+        "accept_rate": 88,
+        "profile_image": "https://www.gravatar.com/avatar/82d0e33bd5d4989410c7e67cefdf056c?s=128&d=identicon&r=PG",
+        "display_name": "James M. Lay",
+        "link": "https://stackoverflow.com/users/1461154/james-m-lay"
+      },
+      "is_answered": true,
+      "view_count": 3090,
+      "accepted_answer_id": 20389293,
+      "answer_count": 3,
+      "score": 8,
+      "last_activity_date": 1386205013,
+      "creation_date": 1386192030,
+      "question_id": 20386219,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/20386219/automatically-run-script-when-exiting-vim",
+      "title": "Automatically run script when exiting vim?"
+    },
+    {
+      "tags": [
+        "git",
+        "vim",
+        "windows-xp",
+        "git-commit"
+      ],
+      "owner": {
+        "reputation": 48187,
+        "user_id": 128463,
+        "user_type": "registered",
+        "accept_rate": 99,
+        "profile_image": "https://i.stack.imgur.com/8gVix.jpg?s=128&g=1",
+        "display_name": "orokusaki",
+        "link": "https://stackoverflow.com/users/128463/orokusaki"
+      },
+      "is_answered": true,
+      "view_count": 161530,
+      "accepted_answer_id": 4708659,
+      "answer_count": 7,
+      "score": 272,
+      "last_activity_date": 1568300024,
+      "creation_date": 1295218336,
+      "last_edit_date": 1568299634,
+      "question_id": 4708645,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/4708645/vim-for-windows-what-do-i-type-to-save-and-exit-from-a-file",
+      "title": "Vim for Windows - What do I type to save and exit from a file?"
+    },
+    {
+      "tags": [
+        "shell",
+        "vim"
+      ],
+      "owner": {
+        "reputation": 504,
+        "user_id": 4476484,
+        "user_type": "registered",
+        "accept_rate": 75,
+        "profile_image": "https://i.stack.imgur.com/bMNeb.jpg?s=128&g=1",
+        "display_name": "nullromo",
+        "link": "https://stackoverflow.com/users/4476484/nullromo"
+      },
+      "is_answered": true,
+      "view_count": 617,
+      "accepted_answer_id": 35246067,
+      "answer_count": 2,
+      "score": 2,
+      "last_activity_date": 1454790329,
+      "creation_date": 1454719247,
+      "question_id": 35235899,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/35235899/break-the-current-program-without-exiting-vim",
+      "title": "Break the current program without exiting VIM"
+    },
+    {
+      "tags": [
+        "python",
+        "vim",
+        "flake8"
+      ],
+      "owner": {
+        "reputation": 601,
+        "user_id": 3695700,
+        "user_type": "registered",
+        "accept_rate": 55,
+        "profile_image": "https://graph.facebook.com/100002639029489/picture?type=large",
+        "display_name": "louie mcconnell",
+        "link": "https://stackoverflow.com/users/3695700/louie-mcconnell"
+      },
+      "is_answered": true,
+      "view_count": 184,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1504349100,
+      "creation_date": 1504310752,
+      "last_edit_date": 1504347951,
+      "question_id": 46009298,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/46009298/vim-shows-python-errors-on-exit",
+      "title": "Vim shows python errors on exit"
+    },
+    {
+      "tags": [
+        "unix",
+        "vim"
+      ],
+      "owner": {
+        "reputation": 1577,
+        "user_id": 533761,
+        "user_type": "registered",
+        "accept_rate": 86,
+        "profile_image": "https://www.gravatar.com/avatar/0dd2f17a9eab392890121e77c74559f2?s=128&d=identicon&r=PG",
+        "display_name": "Neilvert Noval",
+        "link": "https://stackoverflow.com/users/533761/neilvert-noval"
+      },
+      "is_answered": true,
+      "view_count": 1437,
+      "answer_count": 3,
+      "score": 4,
+      "last_activity_date": 1575844556,
+      "creation_date": 1363575518,
+      "question_id": 15469098,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/15469098/update-current-working-directory-after-vim-netrw-exit",
+      "title": "Update current working directory after vim netrw exit"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 2161,
+        "user_id": 1297780,
+        "user_type": "registered",
+        "accept_rate": 45,
+        "profile_image": "https://i.stack.imgur.com/enN4n.jpg?s=128&g=1",
+        "display_name": "Lokomotywa",
+        "link": "https://stackoverflow.com/users/1297780/lokomotywa"
+      },
+      "is_answered": true,
+      "view_count": 737,
+      "accepted_answer_id": 47789530,
+      "answer_count": 3,
+      "score": 0,
+      "last_activity_date": 1513157137,
+      "creation_date": 1513154074,
+      "last_edit_date": 1513155337,
+      "question_id": 47788636,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/47788636/vim-can-not-exit-with-usual-command",
+      "title": "vim - can not exit with usual command"
+    },
+    {
+      "tags": [
+        "firefox",
+        "vim",
+        "mozilla",
+        "firefox-developer-tools"
+      ],
+      "owner": {
+        "reputation": 2697,
+        "user_id": 3174123,
+        "user_type": "registered",
+        "accept_rate": 53,
+        "profile_image": "https://i.stack.imgur.com/JQalB.png?s=128&g=1",
+        "display_name": "Rice",
+        "link": "https://stackoverflow.com/users/3174123/rice"
+      },
+      "is_answered": true,
+      "view_count": 537,
+      "accepted_answer_id": 34782084,
+      "answer_count": 1,
+      "score": 3,
+      "last_activity_date": 1452747910,
+      "creation_date": 1452710723,
+      "question_id": 34774657,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/34774657/exit-vim-insert-mode-in-mozilla-firefox-style-editor",
+      "title": "Exit vim insert mode in Mozilla Firefox Style Editor"
+    },
+    {
+      "tags": [
+        "vim",
+        "makefile"
+      ],
+      "owner": {
+        "reputation": 5353,
+        "user_id": 1128551,
+        "user_type": "registered",
+        "accept_rate": 75,
+        "profile_image": "https://www.gravatar.com/avatar/1b2e64745ac36bf554b976e3625a4ba0?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Shibli",
+        "link": "https://stackoverflow.com/users/1128551/shibli"
+      },
+      "is_answered": true,
+      "view_count": 996,
+      "accepted_answer_id": 39172790,
+      "answer_count": 2,
+      "score": 6,
+      "last_activity_date": 1472567112,
+      "creation_date": 1472235426,
+      "question_id": 39172443,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/39172443/invoke-makefile-in-different-directory-without-exiting-vim",
+      "title": "Invoke Makefile in different directory without exiting Vim"
+    },
+    {
+      "tags": [
+        "linux",
+        "vim"
+      ],
+      "owner": {
+        "reputation": 3346,
+        "user_id": 944000,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/75f25d06e969ee71779663aae6475176?s=128&d=identicon&r=PG",
+        "display_name": "rdo",
+        "link": "https://stackoverflow.com/users/944000/rdo"
+      },
+      "is_answered": true,
+      "view_count": 3182,
+      "accepted_answer_id": 27439752,
+      "answer_count": 3,
+      "score": 21,
+      "last_activity_date": 1603251303,
+      "creation_date": 1418373247,
+      "question_id": 27439656,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/27439656/how-to-exit-from-vim-y-in-console",
+      "title": "How to exit from &quot;vim -y&quot; in console?"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 2213,
+        "user_id": 1144475,
+        "user_type": "registered",
+        "accept_rate": 80,
+        "profile_image": "https://www.gravatar.com/avatar/c1edf0028fc55a04d0a45863267ddb80?s=128&d=identicon&r=PG",
+        "display_name": "Ben Downey",
+        "link": "https://stackoverflow.com/users/1144475/ben-downey"
+      },
+      "is_answered": false,
+      "view_count": 170,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1390731183,
+      "creation_date": 1390597636,
+      "last_edit_date": 1390598121,
+      "question_id": 21342485,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/21342485/command-t-exits-vim-whenever-leader-t-is-pressed",
+      "title": "Command-T exits vim whenever &lt;leader&gt; t is pressed"
+    },
+    {
+      "tags": [
+        "vim",
+        "windows-subsystem-for-linux"
+      ],
+      "owner": {
+        "reputation": 650,
+        "user_id": 7564109,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/21c5ba26db9d247a85098edda4597e78?s=128&d=identicon&r=PG&f=1",
+        "display_name": "A.Comer",
+        "link": "https://stackoverflow.com/users/7564109/a-comer"
+      },
+      "is_answered": false,
+      "view_count": 418,
+      "answer_count": 0,
+      "score": 2,
+      "last_activity_date": 1528474618,
+      "creation_date": 1528388457,
+      "last_edit_date": 1528474618,
+      "question_id": 50745993,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/50745993/vim-colorscheme-changes-terminal-after-exit",
+      "title": "Vim colorscheme changes terminal after exit"
+    },
+    {
+      "tags": [
+        "linux",
+        "shell",
+        "vim",
+        "command-line"
+      ],
+      "owner": {
+        "reputation": 115,
+        "user_id": 6645558,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/533aa064b1820a05704c3b58c660fff1?s=128&d=identicon&r=PG",
+        "display_name": "Jagreet",
+        "link": "https://stackoverflow.com/users/6645558/jagreet"
+      },
+      "is_answered": true,
+      "view_count": 85,
+      "closed_date": 1566746779,
+      "answer_count": 1,
+      "score": -2,
+      "last_activity_date": 1566730070,
+      "creation_date": 1566728285,
+      "question_id": 57645170,
+      "link": "https://stackoverflow.com/questions/57645170/exit-vim-external-command-line-shell",
+      "closed_reason": "Not suitable for this site",
+      "title": "Exit Vim External Command Line Shell"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 3481,
+        "user_id": 1410501,
+        "user_type": "registered",
+        "accept_rate": 71,
+        "profile_image": "https://i.stack.imgur.com/7q1Gm.jpg?s=128&g=1",
+        "display_name": "Ozkan",
+        "link": "https://stackoverflow.com/users/1410501/ozkan"
+      },
+      "is_answered": true,
+      "view_count": 20724,
+      "accepted_answer_id": 15550847,
+      "answer_count": 5,
+      "score": 36,
+      "last_activity_date": 1611634744,
+      "creation_date": 1363875638,
+      "last_edit_date": 1611634744,
+      "question_id": 15550100,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/15550100/how-to-exit-visual-mode-without-a-delay-in-vim",
+      "title": "How to exit visual mode without a delay in Vim?"
+    },
+    {
+      "tags": [
+        "vim",
+        "visual-studio-code"
+      ],
+      "owner": {
+        "reputation": 149,
+        "user_id": 9118624,
+        "user_type": "registered",
+        "accept_rate": 56,
+        "profile_image": "https://www.gravatar.com/avatar/e59b6df8156b3e32af7faae82f9443be?s=128&d=identicon&r=PG&f=1",
+        "display_name": "KidKode",
+        "link": "https://stackoverflow.com/users/9118624/kidkode"
+      },
+      "is_answered": true,
+      "view_count": 1603,
+      "accepted_answer_id": 48769655,
+      "answer_count": 2,
+      "score": 0,
+      "last_activity_date": 1518684743,
+      "creation_date": 1518520401,
+      "last_edit_date": 1518521243,
+      "question_id": 48765491,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/48765491/vs-code-terminal-cursor-exit-vim",
+      "title": "VS Code Terminal Cursor: Exit Vim"
+    },
+    {
+      "tags": [
+        "vim",
+        "zsh",
+        "tmux"
+      ],
+      "owner": {
+        "reputation": 146,
+        "user_id": 2203721,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/FiwZe.jpg?s=128&g=1",
+        "display_name": "Jay Zhuang",
+        "link": "https://stackoverflow.com/users/2203721/jay-zhuang"
+      },
+      "is_answered": true,
+      "view_count": 2085,
+      "answer_count": 2,
+      "score": 2,
+      "last_activity_date": 1408708896,
+      "creation_date": 1364094257,
+      "question_id": 15594710,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/15594710/tmuxvim-vim-didnt-clear-its-screen-after-exiting-in-tmux",
+      "title": "(tmux+vim) vim didn&#39;t clear it&#39;s screen after exiting in tmux"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 41,
+        "user_id": 1096641,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/3e13b05c5361e592dd2880c3881f915c?s=128&d=identicon&r=PG",
+        "display_name": "user21128",
+        "link": "https://stackoverflow.com/users/1096641/user21128"
+      },
+      "is_answered": true,
+      "view_count": 840,
+      "answer_count": 2,
+      "score": 4,
+      "last_activity_date": 1323812981,
+      "creation_date": 1323812638,
+      "question_id": 8496602,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/8496602/vim-restore-shell-on-exit",
+      "title": "vim restore shell on exit"
+    },
+    {
+      "tags": [
+        "vim"
+      ],
+      "owner": {
+        "reputation": 8879,
+        "user_id": 20388,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/8aeec689d2b3378bf61e2b3bcd08ffe4?s=128&d=identicon&r=PG",
+        "display_name": "Greg Sexton",
+        "link": "https://stackoverflow.com/users/20388/greg-sexton"
+      },
+      "is_answered": true,
+      "view_count": 1056,
+      "accepted_answer_id": 5956532,
+      "answer_count": 1,
+      "score": 4,
+      "last_activity_date": 1305084138,
+      "creation_date": 1305059042,
+      "question_id": 5956001,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/5956001/discovering-the-cause-of-vim-exit-status",
+      "title": "Discovering the cause of Vim exit status"
+    },
+    {
+      "tags": [
+        "bash",
+        "vim",
+        "screen"
+      ],
+      "owner": {
+        "reputation": 31,
+        "user_id": 2405963,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/3864b3cc5fd81593468e030d4f1ca679?s=128&d=identicon&r=PG",
+        "display_name": "jlsche",
+        "link": "https://stackoverflow.com/users/2405963/jlsche"
+      },
+      "is_answered": true,
+      "view_count": 282,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1601922808,
+      "creation_date": 1376999797,
+      "last_edit_date": 1601922808,
+      "question_id": 18334404,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/18334404/how-to-display-previous-shell-commands-after-exiting-vim-in-macos-terminal",
+      "title": "How to display previous shell commands after exiting vim in macOS Terminal?"
+    },
+    {
+      "tags": [
+        "vim",
+        "indentation",
+        "esc-key"
+      ],
+      "owner": {
+        "reputation": 5790,
+        "user_id": 292831,
+        "user_type": "registered",
+        "accept_rate": 96,
+        "profile_image": "https://www.gravatar.com/avatar/390226db48db5c3c4f9bd4acb4537c5d?s=128&d=identicon&r=PG",
+        "display_name": "Jookia",
+        "link": "https://stackoverflow.com/users/292831/jookia"
+      },
+      "is_answered": true,
+      "view_count": 394,
+      "accepted_answer_id": 7572430,
+      "answer_count": 3,
+      "score": 5,
+      "last_activity_date": 1317203982,
+      "creation_date": 1317137213,
+      "last_edit_date": 1317203982,
+      "question_id": 7571688,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/7571688/vim-pre-exit-esc-key-command",
+      "title": "Vim Pre-Exit (Esc Key) Command?"
+    },
+    {
+      "tags": [
+        "python",
+        "function",
+        "vim",
+        "return",
+        "exit"
+      ],
+      "owner": {
+        "reputation": 7309,
+        "user_id": 662967,
+        "user_type": "registered",
+        "accept_rate": 86,
+        "profile_image": "https://www.gravatar.com/avatar/7fdcd02510c05d78405a1165fca4b96f?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Reman",
+        "link": "https://stackoverflow.com/users/662967/reman"
+      },
+      "is_answered": true,
+      "view_count": 382,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1456226974,
+      "creation_date": 1456226155,
+      "question_id": 35576060,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/35576060/how-to-exit-a-vim-function-from-python-code",
+      "title": "How to exit a vim function from python code?"
+    },
+    {
+      "tags": [
+        "shell",
+        "vim",
+        "debian",
+        "exitstatus"
+      ],
+      "owner": {
+        "reputation": 622,
+        "user_id": 2119043,
+        "user_type": "registered",
+        "accept_rate": 71,
+        "profile_image": "https://graph.facebook.com/541424336/picture?type=large",
+        "display_name": "Matt Backslash",
+        "link": "https://stackoverflow.com/users/2119043/matt-backslash"
+      },
+      "is_answered": true,
+      "view_count": 644,
+      "accepted_answer_id": 15132591,
+      "answer_count": 3,
+      "score": 2,
+      "last_activity_date": 1362060220,
+      "creation_date": 1362045448,
+      "question_id": 15132481,
+      "content_license": "CC BY-SA 3.0",
+      "link": "https://stackoverflow.com/questions/15132481/shell-script-calls-vim-editor-get-the-exit-method",
+      "title": "Shell Script calls vim editor, get the exit method"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 300,
+  "quota_remaining": 290
+}
