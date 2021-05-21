@@ -37,8 +37,8 @@ local function new_http_request(response)
   }
 end
 
-function plenary_curl.get(url, params)
-  local result = curl.get({ url = url, params = params })
+function plenary_curl.get(url, query)
+  local result = curl.get({ url = url, query = query })
   if result == nil then
     return new_http_request({ status = 500, body = "Failed to fetch" })
   end

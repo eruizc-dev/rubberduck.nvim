@@ -12,11 +12,11 @@ describe("plenary_curl", function()
 
   describe("get", function()
 
-    it("invokes curl with correct url and params", function()
+    it("invokes curl with correct url and query", function()
       local url = "https://api.somewebsite.com"
-      local params = { q = "how to exit vim", sort = "asc"}
-      client.get(url, params)
-      assert.stub(curl.get).was_called_with({ url = url, params = params })
+      local query = { q = "how to exit vim", sort = "asc"}
+      client.get(url, query)
+      assert.stub(curl.get).was_called_with({ url = url, query = query })
     end)
 
     it("returns 500 if receives nil", function()
