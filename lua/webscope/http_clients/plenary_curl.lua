@@ -7,22 +7,28 @@ local function parse_headers(headers)
 
   local parsed_headers = {}
   for _, header in ipairs(headers) do
-    local separator_start, separator_end = header:find(": ")
+    local separator_start, separator_end = header:find(":")
     local key = header:sub(1, separator_start - 1)
     local value = header:sub(separator_end + 1, #header)
-    parsed_headers[key] = value
+    if key and value then
+      parsed_headers[key:gsub("^%s*(.-)%s*$", "%1")] = value:gsub("^%s*(.-)%s*$", "%1")
+    end
   end
 
   return parsed_headers
 end
 
 local function parse_body(body, type)
-  if type == "application/json" then
+  if not body then return {} end
+  if not type then return body end
+
+  if type:match("application/json") then
     local success, result = pcall(json_parser.deserialize, body)
     if success then return result else
-      print(result)
+      -- TODO: logerror
     end
   end
+
   return body
 end
 

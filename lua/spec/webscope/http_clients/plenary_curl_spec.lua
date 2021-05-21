@@ -68,8 +68,13 @@ describe("plenary_curl", function()
       assert.equal(vim.inspect(parsed_headers), vim.inspect(result.headers))
     end)
 
-    it("returns body parsed as json if conten-type is json", function()
-      local headers = { "content-type: application/json" }
+    it("returns body parsed as json if conten-type is application/json", function()
+      local headers = {
+        "content-type: application/json",
+        "content-type: application/json; charset=utf-8",
+        "content-type:application/json",
+        "content-type:application/json;charset=utf-8",
+      }
       local raw_json =  [[{
         "users": ["jhon", "johana"],
         "count": 2,
@@ -81,9 +86,12 @@ describe("plenary_curl", function()
         filters = { startingLetter = "j", age = 25 }
       }
 
-      curl.get.returns({ body = raw_json, headers = headers })
-      local result = client.get("https://api.somewebsite.com")
-      assert.equal(vim.inspect(parsed_json), vim.inspect(result.body))
+      for _, header in ipairs(headers) do
+        curl.get.returns({ body = raw_json, headers = { header } })
+        local result = client.get("https://api.somewebsite.com")
+        assert.equal(vim.inspect(parsed_json), vim.inspect(result.body))
+      end
+
     end)
 
   end)
