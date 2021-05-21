@@ -38,5 +38,25 @@ describe("random", function()
     end)
 
   end)
+
+  describe("table", function()
+    it("produces a table by default", function()
+      local result = random.table()
+      assert("table", type(result))
+    end)
+
+    it("produces different tables", function()
+      local results = {}
+      for i=1,128 do
+        results[i] = random.table()
+      end
+
+      for i = 1, #results do
+        for j = i + 1, #results do
+          assert.are_not_equal(results[i], results[j], "Found to equal tables")
+        end
+      end
+    end)
+  end)
 end)
 
