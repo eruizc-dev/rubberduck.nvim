@@ -1,13 +1,12 @@
 local pickers = require("telescope.pickers")
-local Job = require("plenary.job")
+local system = require("rubberduck.utils.system")
 local async_lib = require("plenary.async_lib")
 local async = async_lib.async
 local await = async_lib.await
 local void = async_lib.void
 
 local function open_url(url)
-  local system = Job:new({ command = "uname" }):sync()
-  local open_cmd = type(system) == "table" and system[1] == "Darwin" and "open" or "xdg-open"
+  local open_cmd = system.get_system_name() == "Darwin" and "open" or "xdg-open"
   local command = string.format("silent !%s '%s'", open_cmd, url)
   vim.api.nvim_command(command)
 end
@@ -36,7 +35,7 @@ local function stackoverflow()
     prompt_title = "StackOverlow",
     attach_mappings = function(prompt_bufnr, map)
       local function open()
-        local content = require("telescope.actions.state").get_selected_entry(prompt_bufnr)
+        local content = require("telescope.actions.state").get_selected_entry()
         open_url(content.link)
         require("telescope.actions").close(prompt_bufnr)
       end
