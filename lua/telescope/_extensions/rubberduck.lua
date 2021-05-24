@@ -32,7 +32,7 @@ local function stackoverflow()
   end
 
   pickers.new({}, {
-    prompt_title = "StackOverlow",
+    prompt_title = " StackOverlow",
     attach_mappings = function(prompt_bufnr, map)
       local function open()
         local content = require("telescope.actions.state").get_selected_entry()
