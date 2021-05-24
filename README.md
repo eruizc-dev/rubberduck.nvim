@@ -2,6 +2,9 @@
 
 Struggling with code? Rubberduck is here to help you figure out what's wrong!
 
+[![LookAndFeel](https://github.com/mvargasmoran/rubberduck.nvim/raw/master/img/rubberduck.png "LookAndFeel")](https://github.com/mvargasmoran/rubberduck.nvim/raw/master/img/rubberduck.png "LookAndFeel")
+
+
 ### Features
 
  - Search stackoverflow with telescope. Use with:
@@ -32,3 +35,6 @@ require("telescope").load_extension("rubberduck")
 " init.vim
 lua require("telescope").load_extension("rubberduck")
 ```
+#### How does it look?
+[![LookAndFeel](https://github.com/mvargasmoran/rubberduck.nvim/raw/master/img/look.png "LookAndFeel")](https://github.com/mvargasmoran/rubberduck.nvim/raw/master/img/look.png "LookAndFeel")
+
