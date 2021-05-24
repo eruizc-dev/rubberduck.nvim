@@ -8,10 +8,12 @@ local function parse_headers(headers)
   local parsed_headers = {}
   for _, header in ipairs(headers) do
     local separator_start, separator_end = header:find(":")
-    local key = header:sub(1, separator_start - 1)
-    local value = header:sub(separator_end + 1, #header)
-    if key and value then
-      parsed_headers[key:gsub("^%s*(.-)%s*$", "%1")] = value:gsub("^%s*(.-)%s*$", "%1")
+    if separator_start and separator_end then
+      local key = header:sub(1, separator_start - 1)
+      local value = header:sub(separator_end + 1, #header)
+      if key and value then
+        parsed_headers[key:gsub("^%s*(.-)%s*$", "%1")] = value:gsub("^%s*(.-)%s*$", "%1")
+      end
     end
   end
 

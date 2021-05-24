@@ -94,6 +94,12 @@ describe("plenary_curl", function()
 
     end)
 
+    it("doesn't break with an empty header", function()
+      local headers = { "content-type: application/json", "" }
+      curl.get.returns({ body = "{ 'count': 10 }", headers = headers })
+      assert(client.get("https://api.somewebsite.com"))
+    end)
+
   end)
 
   mock.revert(curl)
