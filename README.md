@@ -1,14 +1,34 @@
-# Webscope
+# Rubberduck
 
-Explore the web with Telescope
+Struggling with code? Rubberduck is here to help you figure out what's wrong!
 
-### Developers
+### Features
 
- 1. Clone the repo
-	`git clone https://github.com/eruizc-dev/webscope.nvim.git`
- 2. Install submodules
-	`git submodule update --init --recursive`
- 3. Install [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-	`Plug 'nvim-lua/plenary.nvim'`
- 4. Link this plugin's source to your nvim config
-	`ln -s $(pwd) $HOME/.config/nvim/plugged/webscope.nvim`
+ - Search stackoverflow with telescope. Use with:
+ ```vim
+ :Telescope rubberduck stackoverflow
+ ```
+
+### Installation
+
+Use your favorite plugin manager! We need some dependencies tho
+
+```vim
+" init.vim
+Plug "nvim-lua/popup.nvim"
+Plug "nvim-lua/plenary.nvim"
+Plug "nvim-telescope/telescope.nvim"
+Plug "eruizc-dev/rubberduck.nvim"
+```
+
+Attach extension to telescope
+
+```lua
+-- init.lua
+require("telescope").load_extension("rubberduck")
+```
+
+```vim
+" init.vim
+lua require("telescope").load_extension("rubberduck")
+```
