@@ -1,7 +1,7 @@
 local mock = require("luassert.mock")
-local random = require("webscope.utils.random")
+local random = require("rubberduck.utils.random")
 
-local file = require("webscope.utils.file")
+local file = require("rubberduck.utils.file")
 
 local function assert_reads_correctly_when_content_is(contents)
   io.open.returns({ read = function() return contents end, close = function() end })

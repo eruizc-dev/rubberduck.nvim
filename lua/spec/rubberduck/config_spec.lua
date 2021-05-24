@@ -1,7 +1,7 @@
-local random = require("webscope.utils.random")
+local random = require("rubberduck.utils.random")
 
 describe("config", function()
-  local config = require("webscope.config")
+  local config = require("rubberduck.config")
 
   describe("get_default_config", function()
     local default_config = config.get_default_config()

@@ -1,4 +1,4 @@
-local http_client = require("webscope.http_client")
+local http_client = require("rubberduck.http_client")
 
 local stack_overflow = {}
 

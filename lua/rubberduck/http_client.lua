@@ -1,2 +1,2 @@
-local http_client = require("webscope.http_clients.plenary_curl")
+local http_client = require("rubberduck.http_clients.plenary_curl")
 return http_client

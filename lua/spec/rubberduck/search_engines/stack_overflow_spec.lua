@@ -1,11 +1,11 @@
 local mock = require("luassert.mock")
-local file = require("webscope.utils.file")
-local json_parser = require("webscope.json_parser")
+local file = require("rubberduck.utils.file")
+local json_parser = require("rubberduck.json_parser")
 
-local stack_overflow = require("webscope.search_engines.stack_overflow")
+local stack_overflow = require("rubberduck.search_engines.stack_overflow")
 
 describe("stack_overflow", function()
-  local http_client = mock(require("webscope.http_client"), true)
+  local http_client = mock(require("rubberduck.http_client"), true)
 
   before_each(function()
     mock.clear(http_client)
@@ -66,7 +66,7 @@ describe("stack_overflow", function()
     end)
 
     it("parses actual api response", function()
-      local api_response = file.read("./spec/webscope/search_engines/stack_overflow/exit_vim_search.json")
+      local api_response = file.read("./spec/rubberduck/search_engines/stack_overflow/exit_vim_search.json")
       local parsed_response = json_parser.deserialize(api_response)
       http_client.get.returns({ body = parsed_response })
       local result = stack_overflow.search("exit vim")

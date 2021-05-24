@@ -1,7 +1,7 @@
 local mock = require("luassert.mock")
-local random = require("webscope.utils.random")
+local random = require("rubberduck.utils.random")
 
-local client = require("webscope.http_clients.plenary_curl")
+local client = require("rubberduck.http_clients.plenary_curl")
 
 describe("plenary_curl", function()
   local curl = mock(require("plenary.curl"), true)

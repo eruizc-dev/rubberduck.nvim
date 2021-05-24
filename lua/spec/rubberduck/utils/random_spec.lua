@@ -1,4 +1,4 @@
-local random = require("webscope.utils.random")
+local random = require("rubberduck.utils.random")
 
 describe("random", function()
 

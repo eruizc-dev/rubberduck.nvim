@@ -1,4 +1,4 @@
-local json_parser = require("webscope.json_parser")
+local json_parser = require("rubberduck.json_parser")
 local curl = require("plenary.curl")
 local plenary_curl = {}
 

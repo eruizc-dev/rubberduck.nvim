@@ -1,4 +1,4 @@
-local json_lua = require("webscope.json_parsers.json_lua")
+local json_lua = require("rubberduck.json_parsers.json_lua")
 
 describe("json_lua", function()
 
