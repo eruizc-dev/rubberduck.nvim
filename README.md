@@ -32,3 +32,6 @@ require("telescope").load_extension("rubberduck")
 " init.vim
 lua require("telescope").load_extension("rubberduck")
 ```
+#### How does it look?
+[![LookAndFeel](resources/look.png "LookAndFeel")](resources:/look.png "LookAndFeel")
+
