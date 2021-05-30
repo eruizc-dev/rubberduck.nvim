@@ -11,9 +11,9 @@ local function open_url(url)
   vim.api.nvim_command(command)
 end
 
-local function stackoverflow()
-  local question =  vim.fn.input("Ask StackOverlow > ")
-  local input_results = require("rubberduck.search_engines.stack_overflow").search(question)
+local function find(search_func, prompt) 
+  local question = vim.fn.input(prompt or "Search > ")
+  local input_results = search_func(question)
   local results = {}
   for i, v in ipairs(input_results) do
     table.insert(results, setmetatable({
@@ -32,7 +32,7 @@ local function stackoverflow()
   end
 
   pickers.new({}, {
-    prompt_title = " StackOverlow",
+    prompt_title = " StackOverlow",
     attach_mappings = function(prompt_bufnr, map)
       local function open()
         local content = require("telescope.actions.state").get_selected_entry()
@@ -61,8 +61,23 @@ local function stackoverflow()
   }):find()
 end
 
+local function github_repositories()
+  find(
+    require("lua.rubberduck.search_engines.github_repositories").search,
+    "Search Repositories > "
+  )
+end
+
+local function stackoverflow()
+  find(
+    require("rubberduck.search_engines.stack_overflow").search,
+    "Ask StackOverlow > "
+  )
+end
+
 return require("telescope").register_extension({
   exports = {
-    stackoverflow = stackoverflow
+    stackoverflow = stackoverflow,
+    github_repositories = github_repositories
   }
 })
