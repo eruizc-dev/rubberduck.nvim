@@ -1,5 +1,7 @@
 # Rubberduck
 
+![Work In Progress](https://img.shields.io/badge/Work%20In%20Progress-red?style=for-the-badge)
+
 Struggling with code? Rubberduck is here to help you figure out what's wrong!
 
 ### Features
